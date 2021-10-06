@@ -11,23 +11,27 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="Recursos/indexCSS_JSP.css" rel="stylesheet"/>
         <title>JSP Principal</title>
     </head>
     <body>
-        <h1>Hola mundo JSP's</h1>
+        <div class="container" id="mainContainer">
+            <h1>Hola mundo JSP's</h1>
 
-        <h3>Formulario HTML</h3>
-        <form name="formPrincipal" action="laborales.jsp">
+            <form name="formPrincipal" action="laborales.jsp">
             Nombre: <input type="text"  name="name"/>
-            <br>
+            <br><br>
             Dirección: <input type="text"  name="address"/>
-            <br>
+            <br><br>
             Teléfono: <input type="number"  name="cel"/>
-            <br>
-            <input type="submit" value="Enviar"/>
+            <br><br>
             
+            <button type="submit" id="buttonEnviar" name="buttonEnviar" class="btn btn-success">Enviar!</button>
+            </form>
             
-        </form>
+        </div>
         <%--
         <ul>
             <li><%out.print("Hola mundo desde la salida estándar");%></li>

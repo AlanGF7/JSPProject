@@ -11,20 +11,23 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="Recursos/conyugalCSS_JSP.css" rel="stylesheet"/>
         <title>JSP Page</title>
     </head>
     <body>
-        <form name="formConyugal" action="procesarFormulario.jsp">
+        <div class="container" id="conyugalContainer">
+            
+            <form name="formConyugal" action="procesarFormulario.jsp">
             <h1> Información conyugal </h1>
-            <h4>Soltero</h4><input type="radio" name="estado" value="soltero">
-            <h4>Casado</h4><input type="radio" name="estado" value="casado">
-            <h4>Divorciado</h4><input type="radio" name="estado" value="divorciado">
-            <h4>Viudo</h4><input type="radio" name="estado" value="viudo">
-            Nombre: <c:out value="${name}"/>
+            <h4>Soltero &nbsp;<input type="radio" name="estado" value="Soltero"></h4>
             <br>
-            Dirección: <c:out value="${address}"/>
+            <h4>Casado &nbsp; <input type="radio" name="estado" value="Casado"></h4>
             <br>
-            Teléfono: <c:out value="${cel}"/>
+            <h4>Divorciado &nbsp; <input type="radio" name="estado" value="Divorciado"></h4>
+            <br>
+            <h4>Viudo &nbsp; <input type="radio" name="estado" value="Viudo"></h4>
             <br>
             <%-- Prueba <c:out value="${(param.react=='true')?'React - ' : ''} "/>--%>
             <br>
@@ -57,13 +60,10 @@
                  <c:set var="xamarin" value="Xamarin - ${param.xamarinSelect}" scope="session"/>
                 Xamarin - <c:out value="${param.xamarinSelect}"/>
             </c:if>
-                
-                
-                
-            <input type="submit" value="Pruébalo" />
+                <br><br>
+            <button type="submit" id="buttonEnviarCony" name="buttonEnviarCony" class="btn btn-success">Enviar!</button>
             
-            <c:set var="prueba" value="${param.prueba}" scope="session"/>
         </form>
-        
+        </div>
     </body>
 </html>
