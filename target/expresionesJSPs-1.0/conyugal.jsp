@@ -32,9 +32,6 @@
             <input type="submit" value="Pruébalo" />
             
             <c:set var="prueba" value="${param.prueba}" scope="session"/>
-            
-           
-            
         </form>
         
     </body>
