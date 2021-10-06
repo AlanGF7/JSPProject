@@ -18,32 +18,32 @@
         <h1> ¿Qué tecnologías maneja?</h1>
         <br>
         <form name="formLaborales" action="conyugal.jsp">
-            <h4> React <input type="checkbox" value="tech" name="tech"/> </h4> 
-            <select>
+            <h4> React <input type="checkbox" value="true" name="react"/> </h4> 
+            <select name="reactSelect">
                 <option value="Poca">Poca</option>
                 <option value="Moderada">Moderada</option>
                 <option value="Avanzada">Avanzada</option>
             </select>
-            <h4> Angular <input type="checkbox" value="tech" name="tech"/> </h4>
-            <select>
+            <h4> Angular <input type="checkbox" value="true" name="angular"/> </h4>
+            <select name="angularSelect">
                 <option value="Poca">Poca</option>
                 <option value="Moderada">Moderada</option>
                 <option value="Avanzada">Avanzada</option>
             </select>
-            <h4> JEE <input type="checkbox" value="tech" name="tech"/> </h4>
-            <select>
+            <h4> JEE <input type="checkbox" value="true" name="jee"/> </h4>
+            <select name="jeeSelect">
                 <option value="Poca">Poca</option>
                 <option value="Moderada">Moderada</option>
                 <option value="Avanzada">Avanzada</option>
             </select>
-            <h4> Kotlin <input type="checkbox" value="tech" name="tech"/> </h4>
-            <select>
+            <h4> Kotlin <input type="checkbox" value="true" name="kotlin"/> </h4>
+            <select name="kotlinSelect">
                 <option value="Poca">Poca</option>
                 <option value="Moderada">Moderada</option>
                 <option value="Avanzada">Avanzada</option>
             </select>
-            <h4> Xamarin <input type="checkbox" value="tech" name="tech"/> </h4>
-            <select>
+            <h4> Xamarin <input type="checkbox" value="true" name="xamarin"/> </h4>
+            <select name="xamarinSelect">
                 <option value="Poca">Poca</option>
                 <option value="Moderada">Moderada</option>
                 <option value="Avanzada">Avanzada</option>

@@ -20,7 +20,26 @@
         <br>
         Teléfono: <c:out value="${cel}"/>
         <br>
-        Prueba <c:out value="${prueba}"/>
+        Estado civil: <c:out value="${param.estado}"></c:out>
+         <br>
+        <c:if test="${react!= 'false'}">
+            <c:out value="${react}"></c:out>
+        </c:if>
+         <br>
+         <c:if test="${angular!= 'false'}">
+            <c:out value="${angular}"></c:out>
+        </c:if>
         <br>
+        <c:if test="${jee!= 'false'}">
+            <c:out value="${jee}"></c:out>
+        </c:if>
+        <br>
+        <c:if test="${kotlin!= 'false'}">
+            <c:out value="${kotlin}"></c:out>
+        </c:if>
+        <br>
+        <c:if test="${xamarin!= 'false'}">
+            <c:out value="${xamarin}"></c:out>
+        </c:if>
     </body>
 </html>
